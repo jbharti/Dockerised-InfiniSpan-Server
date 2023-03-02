@@ -1,0 +1,14 @@
+version: '2'
+services:      
+  infinispan-server2:
+    image: sk-infinispan-server:10.1.8     
+    container_name: infinispanserver2
+    hostname: infinispan-server-2
+    networks:
+      - infinispan          
+    environment:
+      - TZ=Asia/Kolkata         
+    ports:
+      - 11322:11222     
+networks:
+  infinispan: 

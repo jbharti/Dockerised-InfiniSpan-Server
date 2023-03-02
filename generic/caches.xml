@@ -8,6 +8,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="10000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="RuleInExecution" statistics="true">
             <encoding>
@@ -15,6 +18,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="WorkspaceIformCache" statistics="true">
             <encoding>
@@ -22,6 +28,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="10000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="DashboardCache" statistics="true">
             <encoding>
@@ -29,6 +38,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="2000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="RuleConfigCache" statistics="true">
             <encoding>
@@ -36,13 +48,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
-        </distributed-cache>
-        <distributed-cache mode="ASYNC" name="InvalidCacheName" statistics="true">
-            <encoding>
-                <key media-type="application/x-jboss-marshalling"/>
-                <value media-type="application/x-jboss-marshalling"/>
-            </encoding>
-            <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="SYNC" name="dist" statistics="true">
             <encoding>
@@ -50,6 +58,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="100"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="DocumentCache" statistics="true">
             <encoding>
@@ -57,6 +68,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="10000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="KanbanBoardCfgCache" statistics="true">
             <encoding>
@@ -64,6 +78,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="MessagesToBroadcastCache" statistics="true">
             <encoding>
@@ -71,13 +88,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
-        </distributed-cache>
-        <distributed-cache mode="ASYNC" name="LandingPageCache" statistics="true">
-            <encoding>
-                <key media-type="application/x-jboss-marshalling"/>
-                <value media-type="application/x-jboss-marshalling"/>
-            </encoding>
-            <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="SYNC" name="digite.ear.digite-war.war" statistics="true">
             <encoding>
@@ -85,6 +98,19 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="100"/>
+            </memory>
+        </distributed-cache>
+        <distributed-cache mode="ASYNC" name="LandingPageCache" statistics="true">
+            <encoding>
+                <key media-type="application/x-jboss-marshalling"/>
+                <value media-type="application/x-jboss-marshalling"/>
+            </encoding>
+            <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="OrgPluginPrefCache" statistics="true">
             <encoding>
@@ -92,6 +118,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="AIConfigCache" statistics="true">
             <encoding>
@@ -99,12 +128,18 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
-        <distributed-cache owners="2" mode="ASYNC" name="UserSession" statistics="true">
+        <distributed-cache mode="ASYNC" name="UserSession" statistics="true">
             <encoding>
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="AppAccountPluginPrefCache" statistics="true">
             <encoding>
@@ -112,6 +147,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="DCKCache" statistics="true">
             <encoding>
@@ -119,6 +157,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="StaticLovCache_Repository" statistics="true">
             <encoding>
@@ -126,6 +167,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="BusinessObjectsCache" statistics="true">
             <encoding>
@@ -133,6 +177,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="10000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="TeamCache" statistics="true">
             <encoding>
@@ -140,6 +187,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="KanbanWorkTypeCache" statistics="true">
             <encoding>
@@ -147,6 +197,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="WorkspaceRepositoryCache" statistics="true">
             <encoding>
@@ -154,6 +207,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="QueryStringCache" statistics="true">
             <encoding>
@@ -161,6 +217,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="100"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="StaticLovCache" statistics="true">
             <encoding>
@@ -168,6 +227,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="AppItemTypeCache" statistics="true">
             <encoding>
@@ -175,6 +237,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="10000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="RuleConfigListingCache" statistics="true">
             <encoding>
@@ -182,6 +247,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="NotificationConfigCache" statistics="true">
             <encoding>
@@ -189,6 +257,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="AuthorizationCache" statistics="true">
             <encoding>
@@ -196,6 +267,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="3000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="PersonTeamMappingCache" statistics="true">
             <encoding>
@@ -203,6 +277,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="IntegrationSettingsCache" statistics="true">
             <encoding>
@@ -210,6 +287,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="WebserviceTokenCache" statistics="true">
             <encoding>
@@ -217,6 +297,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="KanbanBoardPolicyCache" statistics="true">
             <encoding>
@@ -224,13 +307,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
-        </distributed-cache>
-        <distributed-cache mode="ASYNC" name="PercentCompletePreferenceCache" statistics="true">
-            <encoding>
-                <key media-type="application/x-jboss-marshalling"/>
-                <value media-type="application/x-jboss-marshalling"/>
-            </encoding>
-            <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="2000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="StaticLovCache_Rep_Name" statistics="true">
             <encoding>
@@ -238,6 +317,19 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
+        </distributed-cache>
+        <distributed-cache mode="ASYNC" name="PercentCompletePreferenceCache" statistics="true">
+            <encoding>
+                <key media-type="application/x-jboss-marshalling"/>
+                <value media-type="application/x-jboss-marshalling"/>
+            </encoding>
+            <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="10000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="MetaTypesCache" statistics="true">
             <encoding>
@@ -245,6 +337,9 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
         </distributed-cache>
         <distributed-cache mode="ASYNC" name="KanbanBoardUpdateCache" statistics="true">
             <encoding>
@@ -252,5 +347,18 @@
                 <value media-type="application/x-jboss-marshalling"/>
             </encoding>
             <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="1000"/>
+            </memory>
+        </distributed-cache>
+        <distributed-cache mode="ASYNC" name="NotExtendableIformCache" statistics="true">
+            <encoding>
+                <key media-type="application/x-jboss-marshalling"/>
+                <value media-type="application/x-jboss-marshalling"/>
+            </encoding>
+            <transaction mode="NONE"/>
+            <memory>
+                <off-heap strategy="REMOVE" size="100"/>
+            </memory>
         </distributed-cache>
     </cache-container></infinispan>
